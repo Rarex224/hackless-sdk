@@ -1,0 +1,45 @@
+{
+  "name": "hackless-sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for the Hackless public API and MCP integrations",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [
+    "hackless",
+    "ctf",
+    "sdk",
+    "api",
+    "mcp",
+    "claude"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rarex224/hackless-sdk.git"
+  },
+  "homepage": "https://github.com/Rarex224/hackless-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/Rarex224/hackless-sdk/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}
